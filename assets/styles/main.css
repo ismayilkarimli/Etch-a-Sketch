@@ -1,0 +1,72 @@
+:root {
+    --bg-color: #E6E6E6;
+    --btn-text-color: #14279B;
+    --btn-border-color: #3D56B2;
+    --btn-active-text-color: #E6E6E6;
+    --btn-active-bg-color: #5C7AEA;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.flex-container {
+    margin: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    order: 1;
+    display: grid;
+    width: 512px;
+    height: 512px;
+    box-shadow: 0 0 4px 1px black;
+}
+
+.square {
+    background: transparent;
+}
+
+.palette-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    font-size: 16px;
+    color: var(--btn-text-color);
+    border: 2px solid var(--btn-border-color);
+    border-radius: 10px;
+    width: 130px;
+    height: 60px;
+    background-color: transparent;
+    transition: all 0.2s ease-out;
+}
+
+.btn:hover {
+    width: 140px;
+    height: 70px;
+    transition: all 0.2s ease-out;
+}
+
+.btn.btn-active {
+    color: var(--btn-active-text-color);
+    background-color: var(--btn-active-bg-color);
+}
