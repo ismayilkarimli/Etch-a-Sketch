@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Etch-a-Sketch</title>
 
-    <script src="./assets/scripts/index.js" defer></script>
-    <link rel="stylesheet" href="./assets/styles/main.css" />
-  </head>
-  <body>
-    <main class="flex-container">
-      <div class="container"></div>
-      <div class="palette-controls">
-        <input type="color" class="selected-color" value="#32a852" /><br />
-        <button class="btn color-mode btn-active">Color Mode</button>
-        <button class="btn rainbow-mode">Rainbow Mode</button>
-        <button class="btn eraser">Eraser</button>
-        <button class="btn clear">Clear</button>
-        <div class="slider-container">
-            <label for="grid-size">Grid dimensions</label>
-            <input type="range" id="grid-size" class="slider" min="8" max="64" value="16"/>
-            <span class="slider-value"></span>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Etch-a-Sketch</title>
+
+  <script src="./assets/scripts/index.js" defer></script>
+  <link rel="stylesheet" href="./assets/styles/main.css" />
+</head>
+
+<body>
+  <main class="flex-container">
+    <div class="container"></div>
+    <div class="palette-controls">
+      <input type="color" class="selected-color" value="#32a852" /><br />
+      <button class="btn color-mode btn-active">Color Mode</button>
+      <button class="btn rainbow-mode">Rainbow Mode</button>
+      <button class="btn eraser">Eraser</button>
+      <button class="btn clear">Clear</button>
+      <div class="slider-container">
+        <label for="grid-size">Grid dimensions</label>
+        <input type="range" id="grid-size" class="slider" min="8" max="64" value="16" />
+        <span class="slider-value"></span>
       </div>
-    </main>
-  </body>
+    </div>
+  </main>
+</body>
+
 </html>

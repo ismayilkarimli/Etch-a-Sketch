@@ -13,14 +13,14 @@ containerStyle.gridTemplateColumns = `repeat(${slider.value}, 1fr)`;
 
 colorWheel.addEventListener('change', () => {
     color = colorWheel.value;
-})
+});
 
 buttons.forEach((button) => button.addEventListener('click', detectClickedButton));
 
 function detectClickedButton(e) {
     if (e.target.classList.contains('clear')) {
         redrawBoard(slider.value);
-        return
+        return;
     }
     buttons.forEach(button => button.classList.remove('btn-active'));
     color = colorWheel.value;
@@ -33,8 +33,6 @@ function detectClickedButton(e) {
     }
 }
 
-
-
 redrawBoard(slider.value);
 
 slider.oninput = () => {
@@ -42,7 +40,7 @@ slider.oninput = () => {
     containerStyle.gridTemplateColumns = `repeat(${slider.value}, 1fr)`;
 
     redrawBoard(slider.value);
-}
+};
 
 function redrawBoard(sliderValue) {
     container.innerHTML = '';
@@ -54,7 +52,6 @@ function redrawBoard(sliderValue) {
         square.style.width = `${squareWidth}px`;
         square.style.height = `${squareWidth}px`;
         square.addEventListener('mouseover', (event) => {
-            console.log('hey hey hey')
             switch (mode) {
                 case 'color':
                     event.target.style.backgroundColor = color;
