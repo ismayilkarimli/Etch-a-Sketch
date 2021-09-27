@@ -64,7 +64,7 @@ function redrawBoard(sliderValue) {
                     event.target.style.backgroundColor = `#${randomHex}`;
                     break;
                 default:
-                    event.target.style.backgroundColor = '#E6E6E6';
+                    event.target.style.backgroundColor = '#f5f5f5';
             }
         });
 
